@@ -1,11 +1,8 @@
 {
   "name": "react",
   "version": "1.0.0",
-  "description": "React example starter project",
-  "keywords": [
-    "react",
-    "starter"
-  ],
+  "description": "Decathlon Ecommerce",
+  "keywords": [],
   "main": "src/index.js",
   "dependencies": {
     "bcryptjs": "2.4.3",

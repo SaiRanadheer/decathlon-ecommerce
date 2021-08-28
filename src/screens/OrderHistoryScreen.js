@@ -42,7 +42,7 @@ export default function OrderHistoryScreen(props) {
                 <td>
                   {order.shippingAddress.fullName} <br />
                   {order.shippingAddress.city}, {order.shippingAddress.country}{" "}
-                  - {order.shippingAddress.postalCode}
+                  - {order.shippingAddress.pincode}
                 </td>
                 <td>
                   <button

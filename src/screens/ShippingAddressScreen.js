@@ -12,14 +12,14 @@ export default function ShippingAddressScreen(props) {
   const [fullName, setFullName] = useState(shippingAddress.fullName);
   const [address, setAddress] = useState(shippingAddress.address);
   const [city, setCity] = useState(shippingAddress.city);
-  const [postalCode, setPostalCode] = useState(shippingAddress.postalCode);
+  const [pincode, setPincode] = useState(shippingAddress.pincode);
   const [country, setCountry] = useState(shippingAddress.country);
   const dispatch = useDispatch();
 
   const submitHandler = (e) => {
     e.preventDefault();
     dispatch(
-      saveShippingAddress({ fullName, address, city, postalCode, country })
+      saveShippingAddress({ fullName, address, city, pincode, country })
     );
     props.history.push("/payment");
   };
@@ -64,13 +64,13 @@ export default function ShippingAddressScreen(props) {
           />
         </div>
         <div>
-          <label htmlFor="postalCode">Postal Code</label>
+          <label htmlFor="pincode">Pincode</label>
           <input
             type="text"
-            id="postalCode"
-            placeholder="Enter Postal Code"
-            value={postalCode}
-            onChange={(e) => setPostalCode(e.target.value)}
+            id="pincode"
+            placeholder="Enter Pincode"
+            value={pincode}
+            onChange={(e) => setPincode(e.target.value)}
             required
           />
         </div>

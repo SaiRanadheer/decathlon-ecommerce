@@ -26,8 +26,7 @@ export default function OrderScreen(props) {
                   <strong>Name: </strong> {order.shippingAddress.fullName}
                   <br />
                   <strong>Address: </strong> {order.shippingAddress.address},{" "}
-                  {order.shippingAddress.city},{" "}
-                  {order.shippingAddress.postalCode},{" "}
+                  {order.shippingAddress.city}, {order.shippingAddress.pincode},{" "}
                   {order.shippingAddress.country}
                 </p>
               </div>
