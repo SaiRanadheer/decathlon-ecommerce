@@ -5,8 +5,9 @@ Decathlon ECommerce Website
 ## Login Details
 
 Users created are with credentails as below
-`sairanadheer@example.com abcd`
-`decathlon_user@example.com abcd`
+
+- sairanadheer@example.com | abcd
+- decathlon_user@example.com | abcd
 
 ## To Run the project
 
